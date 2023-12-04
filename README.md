@@ -15,12 +15,20 @@ simply tap below or visit [LinuxnDroid](https://github.com/AryanVBW/LinuxDroid) 
 
 - **Mobile Optimization:** Tailored specifically for Android devices, ensuring seamless integration and performance.
 
-## 🚀 Getting Started:
+## Notable Tools Included:
+- Nmap
+- Wireshark
+- Metasploit
+- Burp Suite
+- Aircrack-ng
+- Hydra
+- John the Ripper
+- SQLMap
+- LibreOffice
+- Visual Studio Code
+- Mozilla Firefox
 
-1. Clone this repository to your Android device.
-2. Navigate to the KaliMagic directory.
-3. Follow the installation instructions in the README file.
-4. Dive into the world of cybersecurity on your Android!
+Dive into the world of cybersecurity on your Android!
 
 ## 🤝 Contribution and Support:
 
