@@ -3,7 +3,8 @@ Transform your Android device into a cybersecurity playground with Kali Magic! �
 # KaliMagic 🎩🔐
 
 Discover the cybersecurity playground with Kali Magic! 🚀
-
+# installation
+simply tap below or visit [LinuxnDroid](https://github.com/AryanVBW/LinuxDroid) and transform your Android device into a Linux powerhouse effortlessly! 🚀💻📱
 ## 🌟 Key Features:
 
 - **Powerful Tools:** Unleash penetration testing tools for a comprehensive security testing experience.
