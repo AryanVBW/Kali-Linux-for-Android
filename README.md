@@ -29,7 +29,30 @@ simply tap below or visit [LinuxnDroid](https://github.com/AryanVBW/LinuxDroid) 
 - Mozilla Firefox
 
 Dive into the world of cybersecurity on your Android!
+<h1>For manually installation of and Linux follow the following<h1></h1>
+<p align="center">
+<img src="https://github.com/AryanVBW/Myimage/releases/download/m3/kali-nethunter-dragon-tm.png" height="50">
+<img src="https://github.com/AryanVBW/Myimage/releases/download/m3/kali-nethunter-tm.png" height="100">
+</p>  
+<H1>Copy it for Kali Linux /NetHunter Rootless Edition:</H1>
 
+```bash 
+wget -O install-nethunter-termux https://offs.ec/2MceZWr
+   chmod +x install-nethunter-termux
+ ./install-nethunter-termux
+wget https://raw.githubusercontent.com/AryanVBW/LinuxDroid/main/Scripts/menu.sh && chmod +x menu.sh
+rm .bashrc && wget https://raw.githubusercontent.com/AryanVBW/LinuxDroid/main/Scripts/default.bashrc
+mv default.bashrc .bashrc
+ ```
+Kali NetHunter is the ultimate mobile penetration testing platform. It's based on Kali Linux, the most popular penetration testing distribution, and it allows you to run a full range of security tools on your Android device.
+
+With Kali NetHunter, you can:
+
+* Penetration test Android devices
+* Perform security research
+* Learn about ethical hacking
+
+Kali NetHunter is easy to install and use. Just follow the instructions in this guide and you'll be up and running in minutes.
 ## 🤝 Contribution and Support:
 
 - Contribute by reporting issues, suggesting enhancements, or submitting pull requests.
