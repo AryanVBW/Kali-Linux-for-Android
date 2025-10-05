@@ -376,7 +376,7 @@
     <section class="hero">
         <div class="hero-content">
             <h1>🔒 Professional Penetration Testing on Android</h1>
-            <p>Run full-featured Kali Linux on your Android device. Access 600+ security tools anywhere, anytime.</p>
+            <p>Part of LinuxDroid - Run full-featured Kali Linux on your Android device. Access 600+ security tools anywhere, anytime.</p>
             <div class="cta-buttons">
                 <a href="#install" class="btn btn-primary">Get Started</a>
                 <a href="https://github.com/AryanVBW/Kali-Linux-for-Android" class="btn btn-secondary">View on GitHub</a>
@@ -428,35 +428,79 @@
             <div class="step">
                 <span class="step-number">1</span>
                 <strong>Install Termux</strong>
-                <p>Download Termux from F-Droid (recommended) or GitHub releases</p>
+                <p>Download Termux from F-Droid or NetHunter Store (recommended for better compatibility)</p>
                 <div class="code-block">
-                    # Termux provides the terminal environment
+                    # Download from F-Droid or NetHunter Store<br>
+                    # https://f-droid.org/<br>
+                    # https://store.nethunter.com/
                 </div>
             </div>
             <div class="step">
                 <span class="step-number">2</span>
-                <strong>Update Packages</strong>
-                <p>Ensure Termux is up to date before installation</p>
+                <strong>Update & Setup Storage</strong>
+                <p>Update packages and grant storage permissions</p>
                 <div class="code-block">
-                    pkg update && pkg upgrade -y
+                    pkg update -y && pkg upgrade -y<br>
+                    termux-setup-storage
                 </div>
             </div>
             <div class="step">
                 <span class="step-number">3</span>
-                <strong>Clone & Run Installer</strong>
-                <p>Download and execute the automated installation script</p>
+                <strong>Install Required Packages</strong>
+                <p>Install wget and figlet for the LinuxDroid installer</p>
                 <div class="code-block">
-                    git clone https://github.com/AryanVBW/Kali-Linux-for-Android<br>
-                    cd Kali-Linux-for-Android<br>
-                    bash install.sh
+                    pkg install wget -y && pkg install figlet -y
                 </div>
             </div>
             <div class="step">
                 <span class="step-number">4</span>
-                <strong>Start Kali Linux</strong>
-                <p>Launch your Kali environment and start hacking!</p>
+                <strong>Download LinuxDroid Scripts</strong>
+                <p>Get the LinuxDroid menu and configuration files</p>
                 <div class="code-block">
-                    ./start-kali.sh
+                    wget https://github.com/AryanVBW/LinuxDroid/releases/download/scripts/LinuxDroidmenu.sh && chmod +x LinuxDroidmenu.sh<br>
+                    wget https://github.com/AryanVBW/LinuxDroid/releases/download/A1/default.bashrc && chmod +x default.bashrc<br>
+                    rm -rf .bashrc && cp default.bashrc .bashrc
+                </div>
+            </div>
+            <div class="step">
+                <span class="step-number">5</span>
+                <strong>Run LinuxDroid Installer</strong>
+                <p>Execute the main installation script</p>
+                <div class="code-block">
+                    wget https://github.com/AryanVBW/LinuxDroid/releases/download/scripts/LinuxDroid.sh && chmod +x LinuxDroid.sh && bash LinuxDroid.sh
+                </div>
+            </div>
+            <div class="step">
+                <span class="step-number">6</span>
+                <strong>Start Kali Linux</strong>
+                <p>Follow the on-screen menu to select and launch Kali Linux!</p>
+                <div class="code-block">
+                    # Use the LinuxDroid menu to start Kali<br>
+                    ./LinuxDroidmenu.sh
+                </div>
+            </div>
+        </div>
+        
+        <div class="install-steps" style="margin-top: 40px;">
+            <h3 style="text-align: center; color: #1a1a2e; margin-bottom: 20px;">⚡ Quick Install (One Command)</h3>
+            <div class="step">
+                <strong>Automated Installation</strong>
+                <p>Use this single command for automatic setup</p>
+                <div class="code-block">
+                    curl -sSL https://raw.githubusercontent.com/AryanVBW/LinuxDroid/refs/heads/main/1click.install.sh | bash
+                </div>
+            </div>
+        </div>
+        
+        <div class="install-steps" style="margin-top: 40px;">
+            <h3 style="text-align: center; color: #1a1a2e; margin-bottom: 20px;">🔧 Alternative: Kali CLI Only</h3>
+            <div class="step">
+                <strong>Install Kali Command Line Interface</strong>
+                <p>For a lightweight CLI-only installation</p>
+                <div class="code-block">
+                    pkg update -y && pkg install wget curl proot tar -y<br>
+                    wget https://github.com/AryanVBW/LinuxDroid/releases/download/Vivek1/kali-cli.sh -O kali-cli.sh<br>
+                    chmod +x kali-cli.sh && bash kali-cli.sh
                 </div>
             </div>
         </div>
